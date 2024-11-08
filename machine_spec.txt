@@ -19,7 +19,7 @@ qreject
 # Transitions
 q0,a->q1,a,R
 q0,b->qreject,b,R
-q0,_->qreject,_,R
+q0,_->qaccept,_,R
 q1,a->qloop,a,R
 q1,b->q0,b,R
 q1,_->qaccept,_,R

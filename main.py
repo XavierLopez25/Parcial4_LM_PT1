@@ -52,7 +52,7 @@ class TuringMachine:
     def get_configuration(self):
         # Obtiene una representación de la configuración actual de la cinta
         tape_copy = self.tape[:]  # Copia la cinta
-        tape_copy[self.head_position] = f"q{self.current_state}"  # Marca la posición del cabezal con el estado actual
+        tape_copy[self.head_position] = f"{self.current_state}"  # Marca la posición del cabezal con el estado actual
         return ' |'.join(tape_copy)  # Devuelve la configuración como una cadena
 
     def run(self, input_string):
