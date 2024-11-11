@@ -1,0 +1,31 @@
+# States
+q0,q1,q2,qaccept,qreject,qloop
+
+# Input Alphabet
+a,b
+
+# Tape Alphabet
+a,b,_
+
+# Initial State
+q0
+
+# Accept State
+qaccept
+
+# Reject State
+qreject
+
+# Transitions
+q0,a->q1,a,R
+q0,b->qreject,b,R
+q0,_->qaccept,_,R
+q1,a->qloop,a,R
+q1,b->q0,b,R
+q1,_->qaccept,_,R
+qloop,a->qloop,a,R
+qloop,b->qreject,b,R
+qloop,_->qloop,_,R 
+
+# Input String
+abab

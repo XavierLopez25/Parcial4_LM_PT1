@@ -28,4 +28,4 @@ qloop,b->qreject,b,R
 qloop,_->qloop,_,R 
 
 # Input String
-aaab
+aaaaa
